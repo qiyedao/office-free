@@ -1,0 +1,59 @@
+.sheet {
+  width: 100%;
+  table,
+  tbody,
+  td,
+  th {
+    box-sizing: content-box;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    line-height: 21px;
+    padding: 0 4px 0 4px;
+    vertical-align: top;
+    overflow: hidden;
+    outline-width: 0;
+    white-space: nowrap;
+    min-width: 50px;
+  }
+
+  tr {
+    background: #fff;
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    height: 22px;
+    empty-cells: show;
+  }
+
+  &-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    background-color: #f0ecec;
+  }
+
+  &-container {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  &-action {
+    background-color: #d1d1d1;
+    border: 1px solid #aaa;
+    border-right: none;
+    color: #555;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 40%), inset 0 1px 0 #fff;
+    text-shadow: 0 1px #fff;
+
+    &-active {
+      background-color: #fff;
+      color: rgba(30, 142, 62, 0.86);
+      border-top-color: #fff;
+    }
+  }
+}
